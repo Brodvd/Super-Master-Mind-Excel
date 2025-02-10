@@ -1,2 +1,2 @@
-# Super-Master-Mind-Simulator
+# Super-Master-Mind-Excel
 ## Work in progress, wait a moment.
