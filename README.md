@@ -6,6 +6,7 @@ This is a simulator of the well-known game Super Master Mind, the rules are exac
 </p>
 
 # Installation
+* You must have LibreOffice installed, if you don’t have it go [here](https://it.libreoffice.org/download/download/)
 * Clone this repository
 * If you haven’t already done the basic macro execution skills in LibreOffice, do as follows:
   * Open LibreOffice calc
