@@ -17,7 +17,7 @@ With ThisComponent.Sheets(0)
 	for y= 5 to 27 step 2 
 	
 		if .getCellByPosition(4,y).String<>"" and .getCellByPosition(5,y).String<>"" and .getCellByPosition(6,y).String<>"" and .getCellByPosition(7,y).String<>"" and .getCellByPosition(8,y).String<>"" then
-  
+			
 			for x= 4 to 8 'input'
 				'neri'
 				if .getCellByPosition(x,y).String=ThisComponent.Sheets(1).getCellByPosition(x,2).String  then
@@ -35,8 +35,18 @@ With ThisComponent.Sheets(0)
 			next xi
 			avanti: 'uscita dal ciclo più interno'
  			next x
-  
+			
+			if y= 5 then
+				msgbox("Hai perso!")
+				.getCellRangeByName("E3").String=ThisComponent.Sheets(1).getCellRangeByName("E3").String
+				.getCellRangeByName("F3").String=ThisComponent.Sheets(1).getCellRangeByName("F3").String
+				.getCellRangeByName("G3").String=ThisComponent.Sheets(1).getCellRangeByName("G3").String
+				.getCellRangeByName("H3").String=ThisComponent.Sheets(1).getCellRangeByName("H3").String
+				.getCellRangeByName("I3").String=ThisComponent.Sheets(1).getCellRangeByName("I3").String
+			end if
+			
 			exit for 'esci per incrementare le prestazioni'
+			
 		end if
  
 	next y
