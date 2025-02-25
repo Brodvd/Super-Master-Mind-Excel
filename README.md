@@ -2,7 +2,7 @@
 This is a simulator of the well-known game Super Master Mind, the rules are exactly those of the game in box, only that you play alone and there is no exchange of roles of the two players. For the rules go [here](https://brainking.com/it/GameRules?tp=102).
 
 <p align="center">
-  <img align="middle" width="800" src="SMM.png"/>
+  <img align="middle" width="800" src="Img/SMM.png"/>
 </p>
 
 # Installation
