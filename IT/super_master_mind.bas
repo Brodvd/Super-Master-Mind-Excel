@@ -2,8 +2,10 @@ REM  *****  BASIC  *****
 
 Sub Main
 With ThisComponent.Sheets(0)
-	for Y1= 5 to 27 step 2
-		If .getCellByPosition(4,Y1).String=ThisComponent.Sheets(1).getCellRangeByName("E3").String and .getCellByPosition(5,Y1).String=ThisComponent.Sheets(1).getCellRangeByName("F3").String and .getCellByPosition(6,Y1).String=ThisComponent.Sheets(1).getCellRangeByName("G3").String and .getCellByPosition(7,Y1).String=ThisComponent.Sheets(1).getCellRangeByName("H3").String and .getCellByPosition(8,Y1).String=ThisComponent.Sheets(1).getCellRangeByName("I3").String then
+ 
+	for y= 5 to 27 step 2
+
+	        If .getCellByPosition(4,y).String=ThisComponent.Sheets(1).getCellRangeByName("E3").String and .getCellByPosition(5,y).String=ThisComponent.Sheets(1).getCellRangeByName("F3").String and .getCellByPosition(6,y).String=ThisComponent.Sheets(1).getCellRangeByName("G3").String and .getCellByPosition(7,y).String=ThisComponent.Sheets(1).getCellRangeByName("H3").String and .getCellByPosition(8,y).String=ThisComponent.Sheets(1).getCellRangeByName("I3").String then
 			msgbox("Hai vinto," & CHR$(13) & "Vuoi iniziare un'altra partita?" & CHR$(13) & "Clicca su NUOVA PARTITA.",,"Vittoria")
 			.getCellRangeByName("E3").String=ThisComponent.Sheets(1).getCellRangeByName("E3").String
 			.getCellRangeByName("F3").String=ThisComponent.Sheets(1).getCellRangeByName("F3").String
@@ -12,10 +14,7 @@ With ThisComponent.Sheets(0)
 			.getCellRangeByName("I3").String=ThisComponent.Sheets(1).getCellRangeByName("I3").String
 			exit for
 		end if
-	next Y1 
- 
-	for y= 5 to 27 step 2 
-	
+
 		if .getCellByPosition(4,y).String<>"" and .getCellByPosition(5,y).String<>"" and .getCellByPosition(6,y).String<>"" and .getCellByPosition(7,y).String<>"" and .getCellByPosition(8,y).String<>"" then
 			
 			for x= 4 to 8 'input'
